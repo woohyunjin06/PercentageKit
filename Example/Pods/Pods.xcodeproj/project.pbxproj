@@ -13,7 +13,9 @@
 		0892D14FE7A3452423E9129D7917664B /* MatchError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB1CB92EE7BAAD3F0A4E9028FC41E19 /* MatchError.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		092256E303520E50ADEFF25EEB4E73EE /* CwlCatchException.h in Headers */ = {isa = PBXBuildFile; fileRef = 89C120E8CB355F1685358BABF43A55F4 /* CwlCatchException.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10C8810E574F925B5CD3449B6DBE6EC0 /* Quick.h in Headers */ = {isa = PBXBuildFile; fileRef = A508FA505DD93EA63E80B33C57C3E77F /* Quick.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		11142E7D25CC2DDB00C897F3 /* CGRect+Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11142E7C25CC2DDB00C897F3 /* CGRect+Intersection.swift */; };
+		11142E9625CC3E1A00C897F3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11142E9525CC3E1A00C897F3 /* File.swift */; };
+		11142E9F25CC3E3300C897F3 /* CGRect+Intersection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11142E9C25CC3E3300C897F3 /* CGRect+Intersection.swift */; };
+		11142EA025CC3E3300C897F3 /* UICollectionViewCell+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11142E9E25CC3E3300C897F3 /* UICollectionViewCell+Rx.swift */; };
 		13D2A4D59DD9612E1AA7F3182A342162 /* mach_excServer.c in Sources */ = {isa = PBXBuildFile; fileRef = 954F6BC7A562658C4FAC057034F6DF28 /* mach_excServer.c */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
 		14ECE81218F5F5C9BEF00819A7C078EC /* Closures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523F4123831772C0FEEBA7A82BBA31B6 /* Closures.swift */; };
 		192A3F8BEC1A99FD8712D3E09724D72C /* FailureMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA47ACC5B8D31AD74D5BDD185A24EB83 /* FailureMessage.swift */; settings = {COMPILER_FLAGS = "-DPRODUCT_NAME=Nimble/Nimble"; }; };
@@ -167,7 +169,9 @@
 		0B418CA24C4BF8766332116F757630D1 /* PercentageKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PercentageKit-dummy.m"; sourceTree = "<group>"; };
 		0B5488DC431E4914985C4BE0A337A8B0 /* NSBundle+CurrentTestBundle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSBundle+CurrentTestBundle.swift"; path = "Sources/Quick/NSBundle+CurrentTestBundle.swift"; sourceTree = "<group>"; };
 		0D631E9908483F9525A6B3F36F16CC61 /* Quick.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Quick.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11142E7C25CC2DDB00C897F3 /* CGRect+Intersection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGRect+Intersection.swift"; sourceTree = "<group>"; };
+		11142E9525CC3E1A00C897F3 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = File.swift; path = ../../../../PercentageKit/Classes/File.swift; sourceTree = "<group>"; };
+		11142E9C25CC3E3300C897F3 /* CGRect+Intersection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CGRect+Intersection.swift"; path = "../../../../PercentageKit/Classes/CGRect+Intersection.swift"; sourceTree = "<group>"; };
+		11142E9E25CC3E3300C897F3 /* UICollectionViewCell+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Rx.swift"; sourceTree = "<group>"; };
 		13E1FF1EC78A68926B6B412D7F22E64D /* Pods-PercentageKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PercentageKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		14815E9DBB9751E5CE3CA6C0258BCD75 /* CwlCatchBadInstruction.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CwlCatchBadInstruction.swift; path = Carthage/Checkouts/CwlPreconditionTesting/Sources/CwlPreconditionTesting/CwlCatchBadInstruction.swift; sourceTree = "<group>"; };
 		1806132AB751DBCAEF39424E99FF7E48 /* QuickConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = QuickConfiguration.swift; path = Sources/Quick/Configuration/QuickConfiguration.swift; sourceTree = "<group>"; };
@@ -372,6 +376,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		11142E9D25CC3E3300C897F3 /* Rx */ = {
+			isa = PBXGroup;
+			children = (
+				11142E9E25CC3E3300C897F3 /* UICollectionViewCell+Rx.swift */,
+			);
+			name = Rx;
+			path = ../../../../PercentageKit/Classes/Rx;
+			sourceTree = "<group>";
+		};
 		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -498,7 +511,6 @@
 		C948A9FA1421EBDC60DDFDAE0A7CD32A /* PercentageKit */ = {
 			isa = PBXGroup;
 			children = (
-				11142E7C25CC2DDB00C897F3 /* CGRect+Intersection.swift */,
 				AD865E45D30DDA0445E464BD100017C2 /* Pod */,
 				EA039D370C62278217A4BE3EDE4410A3 /* Support Files */,
 			);
@@ -553,6 +565,9 @@
 				E278FAB3B98DEC3A6A0B42A32683D217 /* PercentageKit-umbrella.h */,
 				C51BE7528E600E0A407D7609EF0B338E /* PercentageKit.debug.xcconfig */,
 				4663B5DDC07CA9F4A2A7A0F47B2B99BE /* PercentageKit.release.xcconfig */,
+				11142E9525CC3E1A00C897F3 /* File.swift */,
+				11142E9C25CC3E3300C897F3 /* CGRect+Intersection.swift */,
+				11142E9D25CC3E3300C897F3 /* Rx */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/PercentageKit";
@@ -806,6 +821,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					CAC6672879061F16AF991A750B88CD13 = {
+						LastSwiftMigration = 1240;
+					};
+				};
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -916,7 +936,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3708CE0673F0446221AFE3449331606 /* PercentageKit-dummy.m in Sources */,
-				11142E7D25CC2DDB00C897F3 /* CGRect+Intersection.swift in Sources */,
+				11142E9625CC3E1A00C897F3 /* File.swift in Sources */,
+				11142EA025CC3E3300C897F3 /* UICollectionViewCell+Rx.swift in Sources */,
+				11142E9F25CC3E3300C897F3 /* CGRect+Intersection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1255,6 +1277,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C51BE7528E600E0A407D7609EF0B338E /* PercentageKit.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -1274,6 +1297,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1346,6 +1370,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4663B5DDC07CA9F4A2A7A0F47B2B99BE /* PercentageKit.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
