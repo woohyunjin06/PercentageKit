@@ -1,0 +1,22 @@
+{
+  "name": "PercentageKit",
+  "version": "0.1.0",
+  "summary": "A short description of PercentageKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/woohyunjin06/PercentageKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "woohyunjin06": "woohyunjin06@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/woohyunjin06/PercentageKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "PercentageKit/Classes/**/*"
+}

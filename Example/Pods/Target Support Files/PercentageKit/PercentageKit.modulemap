@@ -1,0 +1,6 @@
+framework module PercentageKit {
+  umbrella header "PercentageKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
