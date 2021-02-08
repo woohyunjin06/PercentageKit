@@ -1,17 +1,30 @@
 PODS:
   - Nimble (8.0.9)
-  - PercentageKit (0.1.0)
+  - PercentageKit (0.1.1):
+    - RxCocoa (~> 6.0)
+    - RxSwift (~> 6.0)
   - Quick (2.2.1)
+  - RxCocoa (6.0.0):
+    - RxRelay (= 6.0.0)
+    - RxSwift (= 6.0.0)
+  - RxRelay (6.0.0):
+    - RxSwift (= 6.0.0)
+  - RxSwift (6.0.0)
 
 DEPENDENCIES:
   - Nimble (~> 8.0.7)
   - PercentageKit (from `../`)
   - Quick (~> 2.2.0)
+  - RxCocoa (~> 6.0)
+  - RxSwift (~> 6.0)
 
 SPEC REPOS:
   trunk:
     - Nimble
     - Quick
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 EXTERNAL SOURCES:
   PercentageKit:
@@ -19,9 +32,12 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Nimble: 98b888285a615fd34f20e61753cf58ea1402bde4
-  PercentageKit: de6527ed8d33864c1bb6347d078cd070a8a10aca
+  PercentageKit: 4154b76c8eb7b2bd1f6d700694129359cd84f970
   Quick: f5754d69b7013f5864c29aab9ae6f0c79c5bc200
+  RxCocoa: 3f79328fafa3645b34600f37c31e64c73ae3a80e
+  RxRelay: 8d593be109c06ea850df027351beba614b012ffb
+  RxSwift: c14e798c59b9f6e9a2df8fd235602e85cc044295
 
-PODFILE CHECKSUM: 610ceed6f0d4d5cc22fb97a2ddb4f20f7018b7b6
+PODFILE CHECKSUM: 4e253559a8a19cf7b6071119522c63663c46c5b7
 
 COCOAPODS: 1.10.1

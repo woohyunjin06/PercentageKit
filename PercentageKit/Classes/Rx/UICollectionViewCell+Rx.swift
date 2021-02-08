@@ -6,4 +6,11 @@
 //
 
 import Foundation
+import UIKit
 
+import RxCocoa
+import RxSwift
+
+extension Reactive where Base: UICollectionViewCell {
+    
+}

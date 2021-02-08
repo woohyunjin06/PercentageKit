@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "PercentageKit"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "Reactive extension for cell that notify its visible percentage"
 
   s.description      = "Reactive extension for UICollectionViewCell/UITableViewCell that notify cell's visible percentage"
@@ -15,4 +15,5 @@ Pod::Spec.new do |s|
   
   s.swift_version = "5.0"
   s.dependency "RxSwift", "~> 6.0"
+  s.dependency "RxCocoa", "~> 6.0"
 end
